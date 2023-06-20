@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx --cache",
     "start": "ts-node ./src/main.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@azure/cosmos": "^3.17.3",
