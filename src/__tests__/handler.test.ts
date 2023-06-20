@@ -65,9 +65,7 @@ describe("Patch operation", () => {
     const operation: PatchRequestBody = [
       { op: "set", path: "/isVisible", value: true },
     ];
-    const res = await executeOperation(
-      containerMock,
-      serviceModelMock,
+    const res = await executeOperation(containerMock, serviceModelMock)(
       ["123" as NonEmptyString],
       operation
     )();

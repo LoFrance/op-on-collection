@@ -23,7 +23,8 @@ executeOperation(
   cosmosdbClient
     .database(config.COSMOSDB_NAME)
     .container(config.COSMOSDB_COLLECTION),
-  sm,
+  sm
+)(
   [
     "01EYNQ0864HKYR1Q9PXPJ18W7G" as NonEmptyString,
     "01EYNQ08CFNATVH1YBN8D14Y8S" as NonEmptyString,
